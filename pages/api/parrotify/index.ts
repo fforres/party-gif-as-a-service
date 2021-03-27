@@ -3,8 +3,9 @@ import { NextApiRequest, NextApiResponse } from "next";
 import multer from "multer";
 import { extname } from "path";
 import { promises } from "fs";
-import { yeetGif } from "../../../src/yeetgif";
 import { v4 } from "uuid";
+
+import { yeetGif } from "../../../src/yeetgif";
 
 const { readFile } = promises;
 
@@ -33,10 +34,8 @@ const uploadMiddleware = upload.single("theImage");
 apiRoute.use(uploadMiddleware);
 // Process a POST request
 apiRoute.post(async (req: FileApiRequest, res: NextApiResponse) => {
-  // console.log(req.file.buffer);
   try {
     const outFile = `/tmp/output/${v4()}.gif`;
-    console.log({ outFile, file: req.file });
     await yeetGif(req.file.path, outFile, {
       commands: [
         {

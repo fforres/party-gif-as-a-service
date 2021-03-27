@@ -26,7 +26,6 @@ export default function Home() {
         );
       },
     });
-    // const bytes = new Uint8Array(response.data);
     const blob = new Blob([response.data], { type: "image/gif" });
     const link = document.createElement("a");
     const url = window.URL.createObjectURL(blob);

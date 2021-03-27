@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "postbuild": "mkdir -p /vercel/workpath0/src/yeetgif && cp -r ./src/yeetgif /vercel/workpath0/src",
     "start": "next start"
   },
   "dependencies": {
