@@ -5,7 +5,7 @@ import { extname } from "path";
 import { promises } from "fs";
 import { v4 } from "uuid";
 
-import { yeetGif } from "../../../src/yeetgif";
+import { yeetGif } from "yeetgif";
 
 const { readFile } = promises;
 
