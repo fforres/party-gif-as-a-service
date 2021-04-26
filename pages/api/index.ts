@@ -1,7 +1,7 @@
 import nextConnect from "next-connect";
 import { NextApiRequest, NextApiResponse } from "next";
 import { v4 } from "uuid";
-import { yeetGif } from "../../src/yeetgif";
+import { yeetGif } from "yeetgif";
 
 const apiRoute = nextConnect({
   // Handle any other HTTP method
