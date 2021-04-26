@@ -21,7 +21,8 @@
     "rmfr": "^2.0.0",
     "sharp": "^0.27.2",
     "styled-components": "^5.0.0",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "yeetgif": "^0.0.5"
   },
   "devDependencies": {
     "@types/multer": "^1.4.5",
